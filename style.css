@@ -1,27 +1,28 @@
 
 body {
   margin:0;
-  font-family:Arial, sans-serif;
-  background:#e0f5f5;
-  color:#033;
+  font-family:'Merriweather', serif;
+  background:#f0f7f7;
+  color:#022;
 }
 header {
   text-align:center;
   padding:3rem 1rem;
-  background:#009b9b;
+  background:#007a7a;
   color:white;
   animation: fadeIn 2s ease;
 }
 .logo {
-  width:140px;
+  width:150px;
   display:block;
   margin:0 auto 1rem auto;
 }
 .nav {
   display:flex;
   justify-content:center;
+  flex-wrap:wrap;
   gap:1rem;
-  background:#026d6d;
+  background:#005f5f;
   padding:1rem;
 }
 .nav a {
@@ -30,7 +31,7 @@ header {
   font-weight:bold;
 }
 section {
-  max-width:800px;
+  max-width:900px;
   margin:2rem auto;
   background:white;
   padding:2rem;
@@ -38,7 +39,20 @@ section {
   box-shadow:0 4px 12px rgba(0,0,0,0.1);
   animation: fadeIn 1s ease;
 }
+.cv-button {
+  display:inline-block;
+  padding:0.8rem 1.2rem;
+  background:#007a7a;
+  color:white;
+  text-decoration:none;
+  border-radius:8px;
+  font-weight:bold;
+}
 @keyframes fadeIn {
   from {opacity:0; transform:translateY(20px);}
   to {opacity:1; transform:translateY(0);}
+}
+@media (max-width:700px){
+  header h1 {font-size:1.8rem;}
+  .nav {font-size:0.9rem;}
 }
