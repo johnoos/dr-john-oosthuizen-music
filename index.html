@@ -1,4 +1,35 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dr John Oosthuizen Music — Home</title>
+<meta name="description" content="Dr John Oosthuizen — academic musician, organist, pianist, music director and researcher.">
+<link rel="stylesheet" href="assets/style.css">
+<script defer src="assets/site.js">function validateField(field){
+const msg = field.parentElement.querySelector('.error-msg');
+if(!field.checkValidity()){ msg.style.display='block'; msg.textContent='This field is required'; return false; }
+msg.style.display='none'; return true;
+}
+
+
+document.querySelectorAll('input[required], textarea[required], select[required]').forEach(f=>{
+const msg = document.createElement('div'); msg.className='error-msg'; f.parentElement.appendChild(msg);
+f.addEventListener('input',()=>validateField(f));
+});
+
+
+const submitBtn = document.querySelector('button[type=submit]');
+function updateButtonState(){
+const allValid = Array.from(document.querySelectorAll('input[required], textarea[required], select[required]')).every(f=>f.checkValidity());
+submitBtn.disabled = !allValid;
+}
+setInterval(updateButtonState, 300);
+
+
+</script>
+<!-- JSON-LD (Person + WebSite) -->
+<script type="application/ld+json">
 { "@context":"https://schema.org", "@type":"WebSite","name":"Dr John Oosthuizen Music","url":"https://YOUR_GITHUB_PAGES_URL" }
 </script>
 </head>
@@ -37,51 +68,4 @@
 <li>PhD in Music (Stellenbosch University, 2023–2025)</li>
 <li>MMus Organ Performance (2020–2022)</li>
 <li>School choir conductor & private piano tutor</li>
-</ul>
-</div>
-</section>
-
-
-<section class="publications">
-<div class="container">
-<h2>Selected Technical Publications</h2>
-<p>Author and contributor to technical and academic publications, including titles for IBM and McGraw Hill, and recent academic papers in organ repertoire and performance practice.</p>
-</div>
-</section>
-</main>
-
-
-<footer class="site-footer">
-<div class="container">
-<p>© 2025 Dr John Oosthuizen Music — <a href="assets/cv.pdf">Download CV</a></p>
-<p class="small">Testimonials available on request • Designed for universities, schools and churches</p>
-</div>
-</footer>
-<script>
-function sendEmailJS(event) {
-event.preventDefault();
-const data = {
-service_id: "service_46jk3wa",
-template_id: "template_opcqy9j",
-user_id: "dCZKYcRrPzf_eE_bz",
-template_params: {
-name: document.querySelector('[name=name]').value,
-email: document.querySelector('[name=email]').value,
-message: document.querySelector('[name=message]') ? document.querySelector('[name=message]').value : "",
-role: document.querySelector('[name=role]') ? document.querySelector('[name=role]').value : "",
-dates: document.querySelector('[name=dates]') ? document.querySelector('[name=dates]').value : ""
-}
-};
-
-
-fetch('https://api.emailjs.com/api/v1.0/email/send', {
-method: 'POST',
-headers: { 'Content-Type': 'application/json' },
-body: JSON.stringify(data)
-})
-.then(res => alert('Your message was sent successfully!'))
-.catch(err => alert('Error sending message. Please try again later.'));
-}
-</script>
-</body>
 </html>
