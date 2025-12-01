@@ -7,7 +7,7 @@ body{font-family:'Merriweather',serif;margin:0;color:var(--text);background:var(
 .header-inner{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:0.5rem 1rem}
 .brand{display:flex;align-items:center;gap:1rem}
 .logo{height:72px}
-.site-header{background:linear-gradient(135deg,var(--navy) 0%,var(--aquamarine) 100%);color:white}
+.site-header{background: linear-gradient(135deg, var(--aquamarine) 0%, var(--navy) 100%);color:white}
 .main-nav{display:flex;gap:1rem}
 .main-nav a{color:white;text-decoration:none;padding:0.5rem 0.7rem;font-weight:700}
 .hamburger{display:none;background:none;border:0;color:white;font-size:1.6rem}
