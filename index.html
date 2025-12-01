@@ -4,6 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dr John Oosthuizen Music</title>
+
+<!-- Metadata for Google Indexing -->
+<meta name="description" content="Dr John Oosthuizen: academic musician, organist, pianist, music director, educator, and researcher in South African jazz-influenced organ music.">
+<meta name="keywords" content="Dr John Oosthuizen, organist, pianist, music director, researcher, South African jazz, academic musician, church music, postdoctoral research">
+<meta name="author" content="Dr John Oosthuizen">
+<meta name="robots" content="index,follow">
+
 <link rel="stylesheet" href="style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,21 +18,28 @@
 </head>
 
 <body>
+
 <header id="top">
   <img src="logo.png" alt="Logo" class="logo">
   <h1>Dr John Oosthuizen Music</h1>
   <p>Academic • Organist • Pianist • Music Director • Educator</p>
+
+  <!-- Hamburger -->
+  <button class="hamburger" aria-label="Open navigation" onclick="toggleMenu()">☰</button>
 </header>
 
-<nav class="nav">
+<nav class="nav" id="nav-menu" aria-label="Primary navigation">
   <a href="#profile">Profile</a>
   <a href="#services">Services</a>
   <a href="#education">Education</a>
   <a href="#experience">Experience</a>
+  <a href="#book">Book Dr Oosthuizen</a>
+  <a href="#download">CV</a>
   <a href="#contact">Contact</a>
   <a href="#top">Top</a>
 </nav>
 
+<main>
 <section id="profile">
 <h2>Profile</h2>
 <p>Academic, instructional, and technical writer and editor with experience producing theses, courses, and technical publications. Skilled in synthesizing complex concepts and creating structured long-form content. Active as a university music lecturer, researcher, private educator, and church music director.</p>
@@ -36,9 +50,9 @@
 <section id="services">
 <h2>Professional Offering</h2>
 <ul>
-<li><strong>Postdoctoral Music Research:</strong> Specialist in jazz-influenced organ repertoire and South African musical aesthetics.</li>
-<li><strong>Music Direction:</strong> Choir training, liturgical planning, ensemble coaching, organ and piano performance.</li>
-<li><strong>Music Education:</strong> Aural training, theory, foundational and intermediate piano studies, group singing instruction.</li>
+<li><strong>Postdoctoral Music Research:</strong> Specialist in jazz-influenced organ repertoire, South African musical aesthetics, and performance practice analyses for higher-education research projects.</li>
+<li><strong>Music Direction:</strong> Choir training, liturgical planning, ensemble coaching, organ and piano performance for schools and churches.</li>
+<li><strong>Music Education:</strong> Aural training, music theory, foundational and intermediate piano tuition, and group singing instruction.</li>
 </ul>
 </section>
 
@@ -46,7 +60,7 @@
 <h2>Education</h2>
 <ul>
 <li>PhD in Music — Stellenbosch University (2023–2025)</li>
-<li>MMus Organ Performance — Stellenbosch University (2020–2022)</li>
+<li>MMus (Organ repertoire interpretation & performance practice) — Stellenbosch University (2020–2022)</li>
 <li>MMus Coursework (Theory & Composition) — UNC Greensboro (2020)</li>
 <li>BMus Honours (cum laude) — Stellenbosch University (2019)</li>
 <li>Mini-MBA — Harvard Business School (2010)</li>
@@ -60,36 +74,59 @@
 
 <h3>Academic (2018–present)</h3>
 <ul>
-<li>Music lecturer: Aural training, music theory, keyboard skills.</li>
-<li>Contributor to conservatory concerts and university musical programmes.</li>
-<li>Researcher in organ performance practice and jazz aesthetics.</li>
+<li>Music Lecturer: Aural training, music theory, and keyboard skills for undergraduate students; tutorial supervision and curriculum contributions.</li>
+<li>Researcher in organ performance practice, jazz-inflected organ aesthetics, and South African jazz genres.</li>
+<li>Contributor to conservatory concerts and departmental musical activities.</li>
 </ul>
 
-<h3>Music Educator (2020–present)</h3>
+<h3>Music Educator & Conductor (2020–present)</h3>
 <ul>
-<li>Private piano instructor (foundational & intermediate levels).</li>
-<li>School choir conductor with multiple gold diploma awards.</li>
-<li>Music programmes for youth at risk (Salesian Institute).</li>
+<li>Private piano tuition (foundational & intermediate levels) — 10 learners</li>
+<li>Group singing classes and school choir direction — multiple gold diplomas at eisteddfods</li>
+<li>Music productions for youth at risk (Salesian Institute, Cape Town)</li>
 </ul>
 
 <h3>Church Music Director (2018–present)</h3>
 <ul>
-<li>Liturgical music planning and choir direction.</li>
-<li>Organist and pianist for parish services.</li>
-<li>Coordination of student cantors and musicians.</li>
+<li>Liturgical music planning, parish organist and pianist, selection of Mass music including university student vocalists as cantors.</li>
 </ul>
 
-<h3>IT Professional (pre-2018)</h3>
+<h3>IT & Technical Publications (pre-2018)</h3>
 <ul>
-<li>Digital Enterprise Architect — Sanlam</li>
-<li>Senior Enterprise Architect — IBM South Africa & Singapore</li>
-<li>Chief IT Architect — Safmarine</li>
+<li>Former roles: Digital Enterprise Architect (Sanlam), Senior Enterprise Architect (IBM), Chief IT Architect (Safmarine).</li>
+<li>Author/co-author of technical publications including IBM 'Redbooks' and McGraw Hill titles.</li>
 </ul>
+</section>
+
+<section id="book">
+<h2>Book Dr Oosthuizen</h2>
+<form class="contact-form" action="https://formspree.io/f/maypllpq" method="POST">
+<label for="name">Your Name</label>
+<input id="name" type="text" name="name" required>
+
+<label for="email">Your Email</label>
+<input id="email" type="email" name="email" required>
+
+<label for="reason">Purpose of Enquiry</label>
+<select id="reason" name="reason" required>
+<option value="postdoctoral">Postdoctoral Research Placement</option>
+<option value="school-music">School Music Director</option>
+<option value="church-music">Church Music Director</option>
+<option value="performance">Organ/Piano Performance</option>
+<option value="other">Other</option>
+</select>
+
+<label for="message">Your Message</label>
+<textarea id="message" name="message" rows="6" required></textarea>
+
+<button type="submit">Send Enquiry</button>
+</form>
 </section>
 
 <section id="download">
 <h2>Download CV</h2>
-<a href="cv.pdf" class="cv-button">Download Full Academic CV (PDF)</a>
+<p>Full academic CV (detailed education, publications, and experience).</p>
+<a href="cv.pdf" class="cv-button" download>Download Full Academic CV (PDF)</a>
 </section>
 
 <section id="contact">
@@ -98,17 +135,29 @@
 <p><strong>Dr John Oosthuizen</strong></p>
 <p>City of Cape Town, Western Cape, South Africa</p>
 <p>Mobile: +27 76 855 9400</p>
-<p>Email: joosthuizen@gmail.com</p>
+<p>Email: <a href="mailto:joosthuizen@gmail.com">joosthuizen@gmail.com</a></p>
 </div>
 </section>
+</main>
+
+<footer class="footer">
+<p>© 2025 Dr John Oosthuizen Music — <a href="#download">Download CV</a></p>
+</footer>
 
 <script>
+function toggleMenu() {
+  document.getElementById('nav-menu').classList.toggle('open');
+}
+
+// Smooth scrolling & close menu on selection
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
-    document.querySelector(this.getAttribute('href')).scrollIntoView({
-      behavior: 'smooth'
-    });
+    const tgt = document.querySelector(this.getAttribute('href'));
+    if (tgt) {
+      tgt.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+    document.getElementById('nav-menu').classList.remove('open');
   });
 });
 </script>
