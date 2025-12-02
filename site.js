@@ -42,7 +42,7 @@
 
 const EMAILJS_SERVICE_ID  = "service_46jk3wa";
 const EMAILJS_TEMPLATE_ID = "template_opcqy9j";
-const EMAILJS_PUBLIC_KEY  = "dCZKYcRrPzf_eE_bz";   // Your TRUE public key
+const EMAILJS_PUBLIC_KEY  = "dCZKYcRrPzf_eE_bz";
 
 
 /* --------------------------------------------------
