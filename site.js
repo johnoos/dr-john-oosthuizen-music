@@ -94,7 +94,7 @@ function sendEmailJS(event){
     body: JSON.stringify({
       service_id: EMAILJS_SERVICE_ID,
       template_id: EMAILJS_TEMPLATE_ID,
-      public_key:  EMAILJS_PUBLIC_KEY,
+      user_id: EMAILJS_PUBLIC_KEY,
       template_params: params
     })
   })
