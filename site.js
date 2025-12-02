@@ -29,9 +29,9 @@ closeNav();
 
 
 /* ---------------- EMAILJS SETUP ---------------- */
-const EMAILJS_SERVICE_ID='YOUR_SERVICE_ID';
-const EMAILJS_TEMPLATE_ID='YOUR_TEMPLATE_ID';
-const EMAILJS_USER_ID='YOUR_PUBLIC_KEY';
+const EMAILJS_SERVICE_ID='service_46jk3wa';
+const EMAILJS_TEMPLATE_ID='service_46jk3wa';
+const EMAILJS_USER_ID='dCZKYcRrPzf_eE_bz';
 
 
 function sendEmailJS(event){
