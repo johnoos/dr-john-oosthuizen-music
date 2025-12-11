@@ -99,7 +99,7 @@ main{max-width:900px;margin:1.6rem auto;padding:0 1rem 3rem}
 .bullets{list-style-type: none; padding-left: 1em}
 .compact li {
   margin: 0.2rem 0;     /* smaller vertical spacing */
-  line-height: 1.3;     /* slightly tighter lines */
+  line-height: 1.2;     /* slightly tighter lines */
 }
 
 /* FORM */
