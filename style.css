@@ -148,3 +148,16 @@ p {
 li {
   margin-bottom: 1.0rem;
 }
+
+.two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+/* On small screens */
+@media (max-width: 600px) {
+  .two-column {
+    grid-template-columns: 1fr;
+  }
+}
