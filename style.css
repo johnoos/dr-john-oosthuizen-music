@@ -161,3 +161,18 @@ li {
     grid-template-columns: 1fr;
   }
 }
+
+.download-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007BFF; /* blue button */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.download-button:hover {
+  background-color: #0056b3; /* darker blue on hover */
+}
